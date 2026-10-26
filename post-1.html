@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Do balcão de vendas ao game design · Flaraoh</title>
+  <meta name="description" content="O que anos de negociação comercial ensinam sobre core loops, playtests e incentivos em jogos.">
+  <meta name="theme-color" content="#FDF9ED">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">
+        <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4 3 27h26L16 4Z" fill="none" stroke="#B8860B" stroke-width="2" stroke-linejoin="round"/><circle cx="16" cy="19" r="2.8" fill="#8B4513"/></svg>
+        <span class="brand__name">Flaraoh</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+        <span class="nav-toggle__label visually-hidden">Abrir menu</span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Principal">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="index.html"><svg class="site-nav__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 20h20L12 3Z"/><path d="M12 3 9.5 20"/></svg>Início</a></li>
+          <li><a class="site-nav__link" href="about.html"><svg class="site-nav__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s4-6 10-6 10 6 10 6-4 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="2.5"/></svg>Sobre</a></li>
+          <li><a class="site-nav__link" href="portfolio.html"><svg class="site-nav__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Portfólio</a></li>
+          <li><a class="site-nav__link" href="blog.html" aria-current="page"><svg class="site-nav__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h12a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3V4Z"/><path d="M9 9h7M9 13h7"/></svg>Blog</a></li>
+          <li><a class="site-nav__link" href="contact.html"><svg class="site-nav__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 11C9.5 9 8.5 7 8.5 5.5a3.5 3.5 0 0 1 7 0C15.5 7 14.5 9 12 11Z"/><path d="M12 11v10M7 14h10"/></svg>Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <article class="container container--narrow">
+      <header class="page-header article-header">
+        <p class="eyebrow"><a href="blog.html">Blog</a> · Carreira</p>
+        <h1 class="mt-0">Do balcão de vendas ao game design: o que negociar me ensinou sobre loops de jogo</h1>
+        <div class="divider" aria-hidden="true"><span class="divider__gem"></span></div>
+        <p class="article-header__meta">
+          <span>Por Flaraoh</span>
+          <time datetime="2026-10-18">18 de outubro de 2026</time>
+          <span>7 min de leitura</span>
+        </p>
+      </header>
+
+      <div class="plaque">
+        <div class="prose">
+          <p class="lead">Durante anos meu dia girava em torno de metas, propostas e objeções. Quando decidi trabalhar com jogos, achei que estava começando do zero. Eu me enganei.</p>
+
+          <p>A primeira vez que desenhei um diagrama de <em>core loop</em>, tive um déjà-vu. Aquilo era o funil de vendas que eu desenhava no quadro branco toda segunda-feira, só que com espadas no lugar de planilhas.</p>
+
+          <h2>Toda negociação é um loop</h2>
+          <p>Uma conversa comercial segue um ciclo previsível: você faz uma proposta, observa a reação, ajusta e tenta de novo. Um bom loop de jogo funciona igual:</p>
+          <ul>
+            <li><strong>Ação:</strong> o jogador faz uma escolha.</li>
+            <li><strong>Feedback:</strong> o jogo responde de forma clara e rápida.</li>
+            <li><strong>Ajuste:</strong> o jogador aprende e muda a estratégia.</li>
+            <li><strong>Recompensa:</strong> algo que torna a próxima volta mais interessante.</li>
+          </ul>
+          <p>Se qualquer etapa falha, o cliente desiste da compra, e o jogador fecha o jogo.</p>
+
+          <h2>Objeções são dados de playtest</h2>
+          <p>No comercial, a gente aprende que objeção não é rejeição; é informação. "Está caro" quase nunca significa "está caro". Em playtests vale o mesmo: quando alguém diz "esse puzzle é chato", geralmente quer dizer "não entendi o que o jogo esperava de mim".</p>
+
+          <blockquote><p>Jogadores são ótimos em dizer que algo está errado e péssimos em dizer o quê. O trabalho de design começa na pergunta seguinte.</p></blockquote>
+
+          <p>Por isso conduzo testes como conduzia reuniões de descoberta: perguntas abertas, silêncio confortável e zero defesa do meu próprio design.</p>
+
+          <h2>Incentivos movem pessoas</h2>
+          <p>Planos de comissão me ensinaram o poder (e o perigo) de um incentivo mal desenhado. Se a meta premia volume, as pessoas vendem qualquer coisa. Em jogos, se a recompensa premia <em>grind</em>, o jogador vai repetir a mesma ação até odiá-la.</p>
+          <p>Hoje, antes de definir qualquer recompensa, faço a pergunta que aprendi com gestores de vendas: <strong>que comportamento isso vai incentivar de verdade?</strong></p>
+
+          <h2>O que levo daqui para a frente</h2>
+          <ol>
+            <li>Mapear o loop antes de qualquer arte ou código.</li>
+            <li>Tratar todo feedback como pista, nunca como ataque.</li>
+            <li>Desenhar incentivos pensando no comportamento que eles geram.</li>
+          </ol>
+          <p>Transição de carreira não é apagar o passado. É encontrar o que já funcionava e dar a isso um novo mapa. No meu caso, um mapa com pirâmides.</p>
+        </div>
+
+        <nav class="pager" aria-label="Navegação do blog">
+          <a class="link-arrow" href="blog.html">Todos os artigos</a>
+          <a class="btn btn--ghost" href="contact.html">Comentar por e-mail</a>
+        </nav>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div>
+        <p class="site-footer__brand">Flaraoh</p>
+        <p>Game designer construindo mundos, um sistema de cada vez.</p>
+      </div>
+      <nav aria-label="Rodapé">
+        <h2 class="site-footer__heading">Navegue</h2>
+        <ul class="site-footer__links">
+          <li><a href="portfolio.html">Portfólio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">Sobre</a></li>
+          <li><a href="contact.html">Contato</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2 class="site-footer__heading">Conecte-se</h2>
+        <ul class="site-footer__links">
+          <li><a href="https://www.linkedin.com/in/seu-usuario" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/seu-usuario" rel="noopener">GitHub</a></li>
+          <li><a href="https://seu-usuario.itch.io" rel="noopener">itch.io</a></li>
+        </ul>
+      </div>
+      <p class="site-footer__copy">© <span data-year>2026</span> Flaraoh. Feito à mão, sem maldições.</p>
+    </div>
+  </footer>
+</body>
+</html>
