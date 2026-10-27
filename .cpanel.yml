@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home1/fla81868/public_html/
+    - /bin/cp *.html $DEPLOYPATH
+    - /bin/cp -R css js assets $DEPLOYPATH
