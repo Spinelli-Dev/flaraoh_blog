@@ -8,7 +8,7 @@
 
   if (toggle && nav) {
     var label = toggle.querySelector(".nav-toggle__label");
-    var desktop = window.matchMedia("(min-width: 48em)");
+    var desktop = window.matchMedia("(min-width: 64em)");
 
     var setOpen = function (open) {
       toggle.setAttribute("aria-expanded", String(open));
@@ -47,6 +47,13 @@
   if (!form) return;
 
   form.setAttribute("novalidate", ""); // JS assume a validação; sem JS, vale a nativa do navegador
+
+  // Links como contact.html?assunto=divulgacao já chegam com o assunto escolhido
+  var topic = /[?&]assunto=([a-z]+)/.exec(window.location.search);
+  var topicField = form.elements.assunto;
+  if (topic && topicField && topicField.querySelector('option[value="' + topic[1] + '"]')) {
+    topicField.value = topic[1];
+  }
   var status = form.querySelector(".form__status");
   var submit = form.querySelector('[type="submit"]');
   var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;

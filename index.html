@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Flaraoh · Game Designer — Portfólio & Blog</title>
-  <meta name="description" content="Flaraoh é game designer com foco em sistemas, narrativa e level design. Conheça os projetos, o blog e vamos conversar.">
+  <title>Flaraoh · Game Designer — Projetos, Diário & Artigos</title>
+  <meta name="description" content="Flaraoh é game designer com foco em sistemas, narrativa e level design. Conheça os projetos, o diário de desenvolvimento e os artigos.">
   <meta name="theme-color" content="#FDF9ED">
   <meta property="og:title" content="Flaraoh · Game Designer">
-  <meta property="og:description" content="Portfólio e blog de game design de Flaraoh.">
+  <meta property="og:description" content="Projetos, diário de desenvolvimento e artigos de game design de Flaraoh.">
   <meta property="og:type" content="website">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,10 +33,12 @@
       <nav id="site-nav" class="site-nav" aria-label="Principal">
         <ul class="site-nav__list">
           <li><a class="site-nav__link" href="index.html" aria-current="page"><svg class="site-nav__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 20h20L12 3Z"/><path d="M12 3 9.5 20"/></svg>Início</a></li>
+          <li><a class="site-nav__link" href="projects.html"><svg class="site-nav__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Projetos</a></li>
+          <li><a class="site-nav__link" href="devlog.html"><svg class="site-nav__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h12a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3V4Z"/><path d="M9 9h7M9 13h7"/></svg>Diário</a></li>
+          <li><a class="site-nav__link" href="articles.html"><svg class="site-nav__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6V3Z"/><path d="M15 3v4h4M9 12h7M9 16h5"/></svg>Artigos</a></li>
           <li><a class="site-nav__link" href="about.html"><svg class="site-nav__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s4-6 10-6 10 6 10 6-4 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="2.5"/></svg>Sobre</a></li>
-          <li><a class="site-nav__link" href="portfolio.html"><svg class="site-nav__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Portfólio</a></li>
-          <li><a class="site-nav__link" href="blog.html"><svg class="site-nav__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h12a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3V4Z"/><path d="M9 9h7M9 13h7"/></svg>Blog</a></li>
           <li><a class="site-nav__link" href="contact.html"><svg class="site-nav__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 11C9.5 9 8.5 7 8.5 5.5a3.5 3.5 0 0 1 7 0C15.5 7 14.5 9 12 11Z"/><path d="M12 11v10M7 14h10"/></svg>Contato</a></li>
+          <li><a class="site-nav__link" href="spotlight.html"><svg class="site-nav__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10v4h3l7 4V6l-7 4H3Z"/><path d="M17 9a4 4 0 0 1 0 6M19.5 6.5a8 8 0 0 1 0 11"/></svg>Divulgações</a></li>
         </ul>
       </nav>
     </div>
@@ -52,8 +54,36 @@
         <div class="plaque hero__plaque">
           <p class="hero__lead">Passei anos negociando no comercial. Hoje desenho jogos em que cada regra guarda um segredo e cada escolha tem preço. Sistemas claros, mistérios bem guardados e jogadores que voltam.</p>
           <div class="hero__actions">
-            <a class="btn" href="portfolio.html">Explorar o portfólio <span class="btn__arrow" aria-hidden="true">→</span></a>
+            <a class="btn" href="projects.html">Ver projetos <span class="btn__arrow" aria-hidden="true">→</span></a>
             <a class="btn btn--ghost" href="contact.html">Vamos conversar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- O QUE EU FAÇO -->
+    <!-- EDITAR: ajuste as três áreas ao seu foco real -->
+    <section class="section section--tight" aria-labelledby="faco-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="faco-title" class="section-title engraved--subtle">O que eu faço</h2>
+          <div class="divider" aria-hidden="true"><span class="divider__gem"></span></div>
+        </header>
+
+        <div class="plaque">
+          <div class="skill-groups">
+            <div class="skill-group">
+              <h3>Design de sistemas</h3>
+              <p>Loops, economias e progressão: regras simples que geram decisões interessantes e se sustentam com o tempo.</p>
+            </div>
+            <div class="skill-group">
+              <h3>Puzzles & level design</h3>
+              <p>Fases que ensinam sem tutorial, com ritmo, leitura clara e aquele momento de "agora entendi".</p>
+            </div>
+            <div class="skill-group">
+              <h3>Playtest & iteração</h3>
+              <p>Testo cedo, observo em silêncio e transformo o que o jogador faz (não só o que ele diz) em ajustes de design.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -109,32 +139,32 @@
           </li>
         </ul>
 
-        <p class="text-center mt-7"><a class="btn btn--ghost" href="portfolio.html">Ver todo o portfólio</a></p>
+        <p class="text-center mt-7"><a class="btn btn--ghost" href="projects.html">Ver todos os projetos</a></p>
       </div>
     </section>
 
-    <!-- ÚLTIMAS DO BLOG -->
-    <section class="section section--tight" aria-labelledby="blog-title">
+    <!-- DIÁRIO & ARTIGOS -->
+    <section class="section section--tight" aria-labelledby="escrita-title">
       <div class="container container--narrow">
         <header class="section-header">
-          <h2 id="blog-title" class="section-title engraved--subtle">Do diário de bordo</h2>
+          <h2 id="escrita-title" class="section-title engraved--subtle">Do diário e dos artigos</h2>
           <div class="divider" aria-hidden="true"><span class="divider__gem"></span></div>
-          <p class="section-header__sub">Notas sobre design, transição de carreira e o que aprendo pelo caminho.</p>
+          <p class="section-header__sub">O processo de cada projeto e o que penso sobre mecânicas, sistemas e experiências de jogo.</p>
         </header>
 
         <div class="plaque">
           <ul class="post-list">
             <li>
               <article class="post-preview">
-                <p class="post-preview__meta"><time datetime="2026-10-18">18 de outubro de 2026</time><span>7 min de leitura</span></p>
-                <h3 class="post-preview__title"><a href="post-1.html">Do balcão de vendas ao game design: o que negociar me ensinou sobre loops de jogo</a></h3>
+                <p class="post-preview__meta"><span>Artigo</span><time datetime="2026-10-18">18 de outubro de 2026</time><span>7 min de leitura</span></p>
+                <h3 class="post-preview__title"><a href="article-1.html">Do balcão de vendas ao game design: o que negociar me ensinou sobre loops de jogo</a></h3>
                 <p class="post-preview__excerpt">Toda boa negociação tem um loop: proposta, reação, ajuste. Descobri que eu já desenhava sistemas muito antes de abrir a Unity.</p>
-                <p><a class="link-arrow" href="post-1.html" aria-label="Ler artigo: Do balcão de vendas ao game design">Ler artigo</a></p>
+                <p><a class="link-arrow" href="article-1.html" aria-label="Ler artigo: Do balcão de vendas ao game design">Ler artigo</a></p>
               </article>
             </li>
             <li>
               <article class="post-preview">
-                <p class="post-preview__meta"><time datetime="2026-11">Novembro de 2026</time><span>Em breve</span></p>
+                <p class="post-preview__meta"><span>Diário · Areias de Rá</span><time datetime="2026-11">Novembro de 2026</time><span>Em breve</span></p>
                 <h3 class="post-preview__title">Diário de jam: 72 horas nas Areias de Rá</h3>
                 <p class="post-preview__excerpt">Escopo, cortes dolorosos e o momento em que o puzzle finalmente "clicou" para os testadores.</p>
               </article>
@@ -142,7 +172,7 @@
           </ul>
         </div>
 
-        <p class="text-center mt-6"><a class="link-arrow" href="blog.html">Ver todos os artigos</a></p>
+        <p class="text-center mt-6"><a class="link-arrow" href="devlog.html">Ver o diário</a> &nbsp;·&nbsp; <a class="link-arrow" href="articles.html">Ver os artigos</a></p>
       </div>
     </section>
 
@@ -171,10 +201,12 @@
       <nav aria-label="Rodapé">
         <h2 class="site-footer__heading">Navegue</h2>
         <ul class="site-footer__links">
-          <li><a href="portfolio.html">Portfólio</a></li>
-          <li><a href="blog.html">Blog</a></li>
+          <li><a href="projects.html">Projetos</a></li>
+          <li><a href="devlog.html">Diário</a></li>
+          <li><a href="articles.html">Artigos</a></li>
           <li><a href="about.html">Sobre</a></li>
           <li><a href="contact.html">Contato</a></li>
+          <li><a href="spotlight.html">Divulgações</a></li>
         </ul>
       </nav>
       <div>

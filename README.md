@@ -1,20 +1,23 @@
-# Flaraoh — Portfólio & Blog
+# Flaraoh — Portfólio de Game Design
 
-Site estático (HTML + CSS + JS puro, sem build). Abra `index.html` no navegador ou publique a pasta em GitHub Pages, Netlify ou Cloudflare Pages.
+Site estático (HTML + CSS + JS puro, sem build). Abra `index.html` no navegador. Publicado na HostGator via Git do cPanel (veja `.cpanel.yml`).
 
 ## Estrutura
 
 ```
-index.html        Home (hero com H1 "gravado", projetos em destaque, últimos posts, CTA)
-about.html        Sobre: apresentação, linha do tempo, habilidades, contato rápido
-portfolio.html    Grade de projetos
+index.html        Início: quem sou, o que faço, projetos em destaque, diário e artigos recentes
+projects.html     Projetos: grade de projetos e o ciclo conceber → desenvolver → testar → melhorar
 project-1.html    Modelo de case study (duplique para project-2.html, ...)
-blog.html         Lista de artigos
-post-1.html       Modelo de artigo (duplique para post-2.html, ...)
-contact.html      Formulário com validação + perfis profissionais
+devlog.html       Diário: entradas de desenvolvimento ligadas a cada projeto (devlog-N.html)
+articles.html     Artigos: análises sobre mecânicas, sistemas e experiências de jogo
+article-1.html    Modelo de artigo (duplique para article-2.html, ...)
+about.html        Sobre: trajetória, competências atuais e direção profissional
+contact.html      Contato: formulário com assunto + perfis profissionais
+spotlight.html    Divulgações: jogos de outros desenvolvedores
 css/style.css     Tokens, base, componentes (BEM-like), media queries mobile-first
 js/main.js        Menu responsivo, ano do rodapé, validação/envio do formulário
 assets/           Favicon e imagens de placeholder (SVG)
+.cpanel.yml       Deploy no cPanel (HostGator): copia *.html, css, js e assets para public_html
 ```
 
 ## Personalização
