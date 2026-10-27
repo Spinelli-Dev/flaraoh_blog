@@ -542,11 +542,19 @@ li { max-width: var(--measure); text-wrap: pretty; }
 
 .hero__plaque { max-width: 44rem; margin-top: var(--sp-2); }
 
+.hero__subtitle {
+  font-size: var(--fs-h3);
+  color: var(--c-cta-dark);
+  margin-bottom: var(--sp-4);
+}
+
 .hero__lead {
   font-size: var(--fs-lg);
   line-height: 1.55;
   margin-inline: auto;
 }
+
+.hero__lead + .hero__lead { margin-top: var(--sp-3); }
 
 .hero__actions {
   display: flex;
