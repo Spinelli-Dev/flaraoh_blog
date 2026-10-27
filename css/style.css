@@ -711,6 +711,10 @@ li { max-width: var(--measure); text-wrap: pretty; }
   color: var(--c-cta);
 }
 
+/* --- Colunas lado a lado com placas da mesma altura (home) --- */
+.split > * { display: flex; flex-direction: column; }
+.split .plaque { flex: 1; }
+
 /* --- Faixa de CTA --- */
 .cta-band { text-align: center; }
 .cta-band .lead { margin: var(--sp-4) auto 0; }

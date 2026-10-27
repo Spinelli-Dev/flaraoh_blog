@@ -45,7 +45,7 @@
   </header>
 
   <main id="conteudo">
-    <!-- HERO -->
+    <!-- BLOCO 1: APRESENTAÇÃO -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="container hero__inner">
         <p class="eyebrow">Game Designer · Sistemas & Narrativa</p>
@@ -63,35 +63,7 @@
       </div>
     </section>
 
-    <!-- O QUE EU FAÇO -->
-    <!-- EDITAR: ajuste as três áreas ao seu foco real -->
-    <section class="section section--tight" aria-labelledby="faco-title">
-      <div class="container">
-        <header class="section-header">
-          <h2 id="faco-title" class="section-title engraved--subtle">O que eu faço</h2>
-          <div class="divider" aria-hidden="true"><span class="divider__gem"></span></div>
-        </header>
-
-        <div class="plaque">
-          <div class="skill-groups">
-            <div class="skill-group">
-              <h3>Design de sistemas</h3>
-              <p>Loops, economias e progressão: regras simples que geram decisões interessantes e se sustentam com o tempo.</p>
-            </div>
-            <div class="skill-group">
-              <h3>Puzzles & level design</h3>
-              <p>Fases que ensinam sem tutorial, com ritmo, leitura clara e aquele momento de "agora entendi".</p>
-            </div>
-            <div class="skill-group">
-              <h3>Playtest & iteração</h3>
-              <p>Testo cedo, observo em silêncio e transformo o que o jogador faz (não só o que ele diz) em ajustes de design.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJETOS EM DESTAQUE -->
+    <!-- BLOCO 2: PROJETOS -->
     <section class="section" aria-labelledby="projetos-title">
       <div class="container">
         <header class="section-header">
@@ -145,54 +117,77 @@
       </div>
     </section>
 
-    <!-- DIÁRIO & ARTIGOS -->
-    <section class="section section--tight" aria-labelledby="escrita-title">
-      <div class="container container--narrow">
-        <header class="section-header">
-          <h2 id="escrita-title" class="section-title engraved--subtle">Do diário e dos artigos</h2>
-          <div class="divider" aria-hidden="true"><span class="divider__gem"></span></div>
-          <p class="section-header__sub">O processo de cada projeto e o que penso sobre mecânicas, sistemas e experiências de jogo.</p>
-        </header>
+    <!-- BLOCOS 3 E 4: DIÁRIO E ARTIGOS (lado a lado no computador) -->
+    <div class="section section--tight">
+      <div class="container grid grid--2 split">
+        <section aria-labelledby="diario-title">
+          <header class="section-header">
+            <h2 id="diario-title" class="section-title engraved--subtle">Diário</h2>
+            <div class="divider" aria-hidden="true"><span class="divider__gem"></span></div>
+            <p class="section-header__sub">O processo de cada projeto: problemas, tentativas e soluções.</p>
+          </header>
+          <div class="plaque">
+            <article class="post-preview">
+              <p class="post-preview__meta"><time datetime="2026-11">Novembro de 2026</time><span>Em breve</span><span>Areias de Rá</span></p>
+              <h3 class="post-preview__title">Diário de jam: 72 horas nas Areias de Rá</h3>
+              <p class="post-preview__excerpt">Escopo, cortes dolorosos e o momento em que o puzzle finalmente "clicou" para quem testava.</p>
+            </article>
+          </div>
+          <p class="text-center mt-6"><a class="link-arrow" href="devlog.html">Ver o diário</a></p>
+        </section>
 
-        <div class="plaque">
-          <ul class="post-list">
-            <li>
-              <article class="post-preview">
-                <p class="post-preview__meta"><span>Artigo</span><time datetime="2026-10-18">18 de outubro de 2026</time><span>7 min de leitura</span></p>
-                <h3 class="post-preview__title"><a href="article-1.html">Do balcão de vendas ao game design: o que negociar me ensinou sobre loops de jogo</a></h3>
-                <p class="post-preview__excerpt">Toda boa negociação tem um loop: proposta, reação, ajuste. Descobri que eu já desenhava sistemas muito antes de abrir a Unity.</p>
-                <p><a class="link-arrow" href="article-1.html" aria-label="Ler artigo: Do balcão de vendas ao game design">Ler artigo</a></p>
-              </article>
-            </li>
-            <li>
-              <article class="post-preview">
-                <p class="post-preview__meta"><span>Diário · Areias de Rá</span><time datetime="2026-11">Novembro de 2026</time><span>Em breve</span></p>
-                <h3 class="post-preview__title">Diário de jam: 72 horas nas Areias de Rá</h3>
-                <p class="post-preview__excerpt">Escopo, cortes dolorosos e o momento em que o puzzle finalmente "clicou" para os testadores.</p>
-              </article>
-            </li>
-          </ul>
-        </div>
-
-        <p class="text-center mt-6"><a class="link-arrow" href="devlog.html">Ver o diário</a> &nbsp;·&nbsp; <a class="link-arrow" href="articles.html">Ver os artigos</a></p>
+        <section aria-labelledby="artigos-title">
+          <header class="section-header">
+            <h2 id="artigos-title" class="section-title engraved--subtle">Artigos</h2>
+            <div class="divider" aria-hidden="true"><span class="divider__gem"></span></div>
+            <p class="section-header__sub">O que penso sobre mecânicas, sistemas e experiências de jogo.</p>
+          </header>
+          <div class="plaque">
+            <article class="post-preview">
+              <p class="post-preview__meta"><time datetime="2026-10-18">18 de outubro de 2026</time><span>7 min de leitura</span><span>Loops & incentivos</span></p>
+              <h3 class="post-preview__title"><a href="article-1.html">Do balcão de vendas ao game design: o que negociar me ensinou sobre loops de jogo</a></h3>
+              <p class="post-preview__excerpt">Toda boa negociação tem um loop: proposta, reação, ajuste. Descobri que eu já desenhava sistemas muito antes de abrir a Unity.</p>
+              <p><a class="link-arrow" href="article-1.html" aria-label="Ler artigo: Do balcão de vendas ao game design">Ler artigo</a></p>
+            </article>
+          </div>
+          <p class="text-center mt-6"><a class="link-arrow" href="articles.html">Ver os artigos</a></p>
+        </section>
       </div>
-    </section>
+    </div>
 
-    <!-- CTA -->
-    <section class="section" aria-labelledby="cta-title">
-      <div class="container container--narrow">
+    <!-- BLOCO 5: SOBRE E CONTATO -->
+    <!-- EDITAR: ajuste as três áreas ao seu foco real -->
+    <section class="section" aria-labelledby="sobre-title">
+      <div class="container">
         <div class="plaque plaque--beige cta-band">
-          <p class="eyebrow">Recrutadores & estúdios</p>
-          <h2 id="cta-title" class="mt-6">Procurando um game designer que fala a língua do jogador <em>e</em> do negócio?</h2>
+          <p class="eyebrow">Sobre mim</p>
+          <h2 id="sobre-title" class="mt-6">Procurando um game designer que fala a língua do jogador <em>e</em> do negócio?</h2>
           <p class="lead">Combino pensamento sistêmico, empatia com o jogador e anos de experiência comercial. Estou aberto a vagas júnior, estágios e colaborações.</p>
+
+          <div class="skill-groups mt-7">
+            <div class="skill-group">
+              <h3>Design de sistemas</h3>
+              <p>Loops, economias e progressão: regras simples que geram decisões interessantes e se sustentam com o tempo.</p>
+            </div>
+            <div class="skill-group">
+              <h3>Puzzles & level design</h3>
+              <p>Fases que ensinam sem tutorial, com ritmo, leitura clara e aquele momento de "agora entendi".</p>
+            </div>
+            <div class="skill-group">
+              <h3>Playtest & iteração</h3>
+              <p>Testo cedo, observo em silêncio e transformo o que o jogador faz (não só o que ele diz) em ajustes de design.</p>
+            </div>
+          </div>
+
           <div class="cta-band__actions">
             <a class="btn" href="contact.html">Entrar em contato</a>
-            <a class="btn btn--ghost" href="about.html">Conhecer minha jornada</a>
+            <a class="btn btn--ghost" href="about.html">Conhecer minha trajetória</a>
           </div>
         </div>
       </div>
     </section>
   </main>
+
 
   <footer class="site-footer">
     <div class="container site-footer__inner">
